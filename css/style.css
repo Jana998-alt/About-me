@@ -1,0 +1,26 @@
+#left, #right {
+	background: rgb(155, 155, 216);
+	position: fixed;
+}
+#right {
+	top: 0; bottom: 0;
+	width: 350px; right: 0;
+}
+#left{
+    top: 0; bottom: 0;
+	width: 14px; left: 0;
+}
+
+body {
+    margin-right: 400px;
+    margin-left: 25px;
+
+}
+#mypic {
+    float: right;
+    width: 400px;
+}
+footer{
+    margin-top:60px ;
+    margin-bottom: 14px;
+}
