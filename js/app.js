@@ -11,13 +11,13 @@ if (developer === "yes" || developer === "y"){
 
 else if (developer === "no" || developer === "n"){
     alert("Yes!")
-    score= score++;
+    score= score+1;
 }
 
 let day = prompt("Do you think I am a morning person more than night person?").toLowerCase()
     if (day === "yes" || day === "y"){
         alert("definitely")
-        score= score++;
+        score= score+1;
     }
     
     else if (day === "no" || day === "n"){
@@ -27,7 +27,7 @@ let day = prompt("Do you think I am a morning person more than night person?").t
 let background = prompt("Do you think I am from a science background?").toLowerCase()
 if (background === "yes" || background === "y"){
     alert("That is True!")
-    score= score++;
+    score= score+1;
 }
 
 else if (background === "no" || background === "n"){
@@ -41,13 +41,13 @@ if (blue === "yes" || blue === "y"){
 
 else if (blue === "no" || blue === "n"){
     alert("Blue is my favorate color ... at least most of the time.")
-    score= score++;
+    score= score+1;
 }
 
 let book = prompt ("Do you think I prefer books over movies?").toLowerCase()
 if (book === "yes" || book === "y" || book === "no" || book === "n"){
     alert("depends on the story, but yes, I usually prefer books")
-    score= score++;
+    score= score+1;
 }
 else if (book === "no" || book === "n"){
     alert("depends on the story, but No, I usually prefer books")
