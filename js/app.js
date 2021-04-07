@@ -7,9 +7,8 @@ let score = 0;
 
 
 question01();
-
-
 question02();
+question03();
 
 
 
@@ -44,19 +43,26 @@ function question02() {
 
 
 
-
-
-
 //Question #3
-let background = prompt('Do you think I am from a science background?').toLowerCase();
-if (background === 'yes' || background === 'y'){
-  alert('That is True!');
-  score= score+1;
+function question03() {
+
+  let background = prompt('Do you think I am from a science background?').toLowerCase();
+  if (background === 'yes' || background === 'y'){
+    alert('That is True!');
+    score= score+1;
+  }
+
+  else if (background === 'no' || background === 'n'){
+    alert('Actually, I am');
+  }
+
 }
 
-else if (background === 'no' || background === 'n'){
-  alert('Actually, I am');
-}
+
+
+
+
+
 //Question #4
 let blue = prompt('Do you think I prefer black over blue?').toLowerCase();
 if (blue === 'yes' || blue === 'y'){
