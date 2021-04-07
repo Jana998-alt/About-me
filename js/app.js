@@ -4,15 +4,22 @@ alert( 'Welcome to our website, ' + username + '!' + 'let is play this game');
 
 
 let score = 0;
+allQuestion();
 
 
-question01();
-question02();
-question03();
-question04();
-question05();
-question06();
-question07();
+
+function allQuestion() {
+  question01();
+  question02();
+  question03();
+  question04();
+  question05();
+  question06();
+  question07();
+}
+
+
+
 
 
 
