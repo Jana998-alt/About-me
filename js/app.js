@@ -9,6 +9,7 @@ let score = 0;
 question01();
 question02();
 question03();
+question04();
 
 
 
@@ -58,21 +59,28 @@ function question03() {
 
 }
 
-
-
-
-
-
 //Question #4
-let blue = prompt('Do you think I prefer black over blue?').toLowerCase();
-if (blue === 'yes' || blue === 'y'){
-  alert('No, I think black is too dark, I prefer blue.');
+function question04() {
+
+  let blue = prompt('Do you think I prefer black over blue?').toLowerCase();
+  if (blue === 'yes' || blue === 'y'){
+    alert('No, I think black is too dark, I prefer blue.');
+  }
+
+  else if (blue === 'no' || blue === 'n'){
+    alert('Blue is my favorate color ... at least most of the time.');
+    score= score+1;
+  }
 }
 
-else if (blue === 'no' || blue === 'n'){
-  alert('Blue is my favorate color ... at least most of the time.');
-  score= score+1;
-}
+
+
+
+
+
+
+
+
 //Question #5
 let book = prompt ('Do you think I prefer books over movies?').toLowerCase();
 
