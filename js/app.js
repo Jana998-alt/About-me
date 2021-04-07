@@ -106,8 +106,9 @@ if(ispet === true){
   console.log('3rdif');
 }
 else{
-  alert('Actually, no. I love: '+ favpet[0]+'s, '+favpet[1]+'s, and '+favpet[2]+'s.');
+  alert('Actually, no. I love: '+ favpet[0]+'s, '+favpet[1]+'s, and '+favpet[2]+'s.')
   console.log('else');
 }
 
 alert ('Welcome, ' + username + ' You got '+ score + ' out of 7!');
+
