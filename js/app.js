@@ -11,6 +11,7 @@ question02();
 question03();
 question04();
 question05();
+question06();
 
 
 
@@ -91,37 +92,43 @@ function question05() {
   }
 }
 
-
-
-
-
 //Question #6
-let village = prompt('How much -on a scale from 1 to 20- you guess I want to live in a green village? ');
-village=parseInt(village);
-let i=0;
+function question06() {
+  let village = prompt('How much -on a scale from 1 to 20- you guess I want to live in a green village? ');
+  village=parseInt(village);
+  let i=0;
 
-
-for (i=1; village!==17 && i<4 ;i++){
-  if (village <= 7){
-    village = prompt('This value is too low, Try again. How much -on a scale from 1 to 10- you guess I want to live in a green village? ');
-    village=parseInt(village);
+  for (i=1; village!==17 && i<4 ;i++){
+    if (village <= 7){
+      village = prompt('This value is too low, Try again. How much -on a scale from 1 to 10- you guess I want to live in a green village? ');
+      village=parseInt(village);
+    }
+    else if( village >14 && village < 21 && village !== 17 ){
+      village = prompt('you are close, Try again. How much -on a scale from 1 to 10- you guess I want to live in a green village? ');
+      village=parseInt(village);
+    }
   }
-  else if( village >14 && village < 21 && village !== 17 ){
-    village = prompt('you are close, Try again. How much -on a scale from 1 to 10- you guess I want to live in a green village? ');
-    village=parseInt(village);
+
+  if (village === 17){
+    alert('Correct!');
+    score = score +1 ;
+  }
+  else {
+    alert('Nope, the answer is 17');
   }
 }
 
-if (village === 17){
-  alert('Correct!');
-  score = score +1 ;
-}
-else {
-  alert('Nope, the answer is 17');
-}
+
+
+
+
+
+
+
 
 //Question #7
 let favpet = ['horse', 'dog', 'squirrel'];
+let i=0;
 let pet = prompt('Can you guess my favorite animals?').toLocaleLowerCase();
 let ispet = false ;
 for (i=0; i<3;i++){
