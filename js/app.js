@@ -7,7 +7,12 @@ let score = 0;
 
 
 question01();
+
+
 question02();
+
+
+
 
 function question01 ( ) {
   let developer = prompt('Do you think I prefer to be a back-end more than front-end developer?').toLowerCase();
