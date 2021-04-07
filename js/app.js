@@ -8,6 +8,12 @@ let score = 0;
 
 question01();
 
+
+question02();
+
+
+
+
 function question01 ( ) {
   let developer = prompt('Do you think I prefer to be a back-end more than front-end developer?').toLowerCase();
 
@@ -23,14 +29,24 @@ function question01 ( ) {
 
 
 //Question #2
-let day = prompt('Do you think I am a morning person more than night person?').toLowerCase();
-if (day === 'yes' || day === 'y'){
-  alert('definitely');
-  score= score+1;
+function question02() {
+
+  let day = prompt('Do you think I am a morning person more than night person?').toLowerCase();
+  if (day === 'yes' || day === 'y'){
+    alert('definitely');
+    score= score+1;
+  }
+  else if (day === 'no' || day === 'n'){
+    alert('Not really ...');
+  }
+
 }
-else if (day === 'no' || day === 'n'){
-  alert('Not really ...');
-}
+
+
+
+
+
+
 //Question #3
 let background = prompt('Do you think I am from a science background?').toLowerCase();
 if (background === 'yes' || background === 'y'){
