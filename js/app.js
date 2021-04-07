@@ -10,6 +10,7 @@ question01();
 question02();
 question03();
 question04();
+question05();
 
 
 
@@ -76,21 +77,23 @@ function question04() {
 
 
 
-
-
-
-
-
 //Question #5
-let book = prompt ('Do you think I prefer books over movies?').toLowerCase();
+function question05() {
 
-if (book === 'yes' || book === 'y' ){
-  alert('depends on the story, but yes, I usually prefer books');
-  score = score+1 ;
+  let book = prompt ('Do you think I prefer books over movies?').toLowerCase();
 
-}else if( book === 'no' || book === 'n'){
-  alert('depends on the story, but No, I usually prefer books');
+  if (book === 'yes' || book === 'y' ){
+    alert('depends on the story, but yes, I usually prefer books');
+    score = score+1 ;
+
+  }else if( book === 'no' || book === 'n'){
+    alert('depends on the story, but No, I usually prefer books');
+  }
 }
+
+
+
+
 
 //Question #6
 let village = prompt('How much -on a scale from 1 to 20- you guess I want to live in a green village? ');
