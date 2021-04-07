@@ -6,12 +6,13 @@ alert( 'Welcome to our website, ' + username + '!' + 'let is play this game');
 let score = 0;
 
 
-question01();
-question02();
-question03();
-question04();
-question05();
-question06();
+// question01();
+// question02();
+// question03();
+// question04();
+// question05();
+// question06();
+question07();
 
 
 
@@ -121,41 +122,43 @@ function question06() {
 
 
 
-
-
-
-
-
 //Question #7
-let favpet = ['horse', 'dog', 'squirrel'];
-let i=0;
-let pet = prompt('Can you guess my favorite animals?').toLocaleLowerCase();
-let ispet = false ;
-for (i=0; i<3;i++){
-  if (pet === favpet[i]){
-    ispet = true;
-    console.log('1stfor,1stif');
-  }
-}
-
-for(let j=0; ispet === false && j<5; j++){
-  pet=prompt('No, try again. Can you guess one of my favorite animals?');
-  for (let k=0; k<3;k++){
-    if (pet === favpet[k]){
+function question07() {
+  let favpet = ['horse', 'dog', 'squirrel'];
+  let i=0;
+  let pet = prompt('Can you guess my favorite animals?').toLocaleLowerCase();
+  let ispet = false ;
+  for (i=0; i<3;i++){
+    if (pet === favpet[i]){
       ispet = true;
-      console.log('2stfor, 2stif');
+      console.log('1stfor,1stif');
     }
   }
+
+  for(let j=0; ispet === false && j<5; j++){
+    pet=prompt('No, try again. Can you guess one of my favorite animals?');
+    for (let k=0; k<3;k++){
+      if (pet === favpet[k]){
+        ispet = true;
+        console.log('2stfor, 2stif');
+      }
+    }
+  }
+  if(ispet === true){
+    alert('Yes, I do love: ' + favpet[0] +'s, '+favpet[1]+'s, and '+favpet[2]+'s.');
+    score=score+1;
+    console.log('3rdif');
+  }
+  else{
+    alert('Actually, no. I love: '+ favpet[0]+'s, '+favpet[1]+'s, and '+favpet[2]+'s.');
+    console.log('else');
+  }
 }
-if(ispet === true){
-  alert('Yes, I do love: ' + favpet[0] +'s, '+favpet[1]+'s, and '+favpet[2]+'s.');
-  score=score+1;
-  console.log('3rdif');
-}
-else{
-  alert('Actually, no. I love: '+ favpet[0]+'s, '+favpet[1]+'s, and '+favpet[2]+'s.');
-  console.log('else');
-}
+
+
+
+
+
 
 alert ('Welcome, ' + username + ' You got '+ score + ' out of 7!');
 
