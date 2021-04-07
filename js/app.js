@@ -1,20 +1,27 @@
 'use strict';
 let username = prompt('what is your name?');
 alert( 'Welcome to our website, ' + username + '!' + 'let is play this game');
-//Question #1
 
-let developer = prompt('Do you think I prefer to be a back-end more than front-end developer?').toLowerCase();
 
 let score = 0;
 
-if (developer === 'yes' || developer === 'y'){
-  alert('Nope');
+
+question01();
+
+function question01 ( ) {
+  let developer = prompt('Do you think I prefer to be a back-end more than front-end developer?').toLowerCase();
+
+  if (developer === 'yes' || developer === 'y'){
+    alert('Nope');
+  }
+  else if (developer === 'no' || developer === 'n'){
+    alert('Yes!');
+    score= score+1;
+  }
 }
 
-else if (developer === 'no' || developer === 'n'){
-  alert('Yes!');
-  score= score+1;
-}
+
+
 //Question #2
 let day = prompt('Do you think I am a morning person more than night person?').toLowerCase();
 if (day === 'yes' || day === 'y'){
